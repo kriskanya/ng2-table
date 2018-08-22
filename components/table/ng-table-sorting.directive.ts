@@ -1,4 +1,4 @@
-import {Directive, EventEmitter, Input, Output, HostListener} from '@angular/core';
+import { Directive, EventEmitter, Input, Output, HostListener } from '@angular/core';
 
 @Directive({selector: '[ngTableSorting]'})
 export class NgTableSortingDirective {
@@ -15,7 +15,7 @@ export class NgTableSortingDirective {
     this.ngTableSorting = value;
   }
 
-  @HostListener('click', ['$event', '$target'])
+  @HostListener('click', ['$event'])
   public onToggleSort(event:any):void {
     if (event) {
       event.preventDefault();

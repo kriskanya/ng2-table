@@ -7,7 +7,7 @@ typings
 
 # testing
 karma.conf.js
-test.bundle.js
+spec-bundle.js
 coverage
 
 # demo build
@@ -22,3 +22,4 @@ webpack.config.js
 /components/**/*.ts
 !/components/**/*.d.ts
 
+factories
